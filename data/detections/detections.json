@@ -1,0 +1,125 @@
+﻿{
+    "source_image":  "D:\\btaplonxulyanh\\GIS_AI_Project\\data\\raster\\orthophoto_normalized.tif",
+    "model":  "yolov8s-worldv2.pt",
+    "image_width":  13059,
+    "image_height":  12111,
+    "search_scope":  "full orthophoto plus supplemental pass over four user-marked roof areas; three known false-positive areas excluded from full-image pass",
+    "coordinate_note":  "Bounding boxes use image pixel coordinates; origin is top-left.",
+    "count":  6,
+    "detections":  [
+                       {
+                           "id":  1,
+                           "class_id":  0,
+                           "label":  "house",
+                           "confidence":  0.053986,
+                           "source_pass":  "full-image",
+                           "bbox_xyxy":  {
+                                             "x_min":  6108.7,
+                                             "y_min":  93.67,
+                                             "x_max":  6526.54,
+                                             "y_max":  535.62
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  6317.62,
+                                             "y_center":  314.64,
+                                             "width":  417.84,
+                                             "height":  441.95
+                                         }
+                       },
+                       {
+                           "id":  2,
+                           "class_id":  0,
+                           "label":  "small house with a bright roof",
+                           "confidence":  0.736372,
+                           "source_pass":  "marked-roofs",
+                           "bbox_xyxy":  {
+                                             "x_min":  3176.55,
+                                             "y_min":  1077.29,
+                                             "x_max":  3614.88,
+                                             "y_max":  1486.29
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  3395.72,
+                                             "y_center":  1281.79,
+                                             "width":  438.33,
+                                             "height":  409.0
+                                         }
+                       },
+                       {
+                           "id":  3,
+                           "class_id":  0,
+                           "label":  "small house with a bright roof",
+                           "confidence":  0.385573,
+                           "source_pass":  "marked-roofs",
+                           "bbox_xyxy":  {
+                                             "x_min":  6376.0,
+                                             "y_min":  576.95,
+                                             "x_max":  6777.61,
+                                             "y_max":  981.5
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  6576.81,
+                                             "y_center":  779.23,
+                                             "width":  401.61,
+                                             "height":  404.55
+                                         }
+                       },
+                       {
+                           "id":  4,
+                           "class_id":  0,
+                           "label":  "small house with a bright roof",
+                           "confidence":  0.321084,
+                           "source_pass":  "marked-roofs",
+                           "bbox_xyxy":  {
+                                             "x_min":  8327.38,
+                                             "y_min":  1632.91,
+                                             "x_max":  8766.84,
+                                             "y_max":  2068.17
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  8547.11,
+                                             "y_center":  1850.54,
+                                             "width":  439.46,
+                                             "height":  435.26
+                                         }
+                       },
+                       {
+                           "id":  5,
+                           "class_id":  0,
+                           "label":  "small house with a bright roof",
+                           "confidence":  0.25124,
+                           "source_pass":  "marked-roofs",
+                           "bbox_xyxy":  {
+                                             "x_min":  8621.12,
+                                             "y_min":  1378.07,
+                                             "x_max":  9162.8,
+                                             "y_max":  1782.95
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  8891.96,
+                                             "y_center":  1580.51,
+                                             "width":  541.68,
+                                             "height":  404.88
+                                         }
+                       },
+                       {
+                           "id":  6,
+                           "class_id":  0,
+                           "label":  "small house with a bright roof",
+                           "confidence":  0.215573,
+                           "source_pass":  "marked-roofs",
+                           "bbox_xyxy":  {
+                                             "x_min":  12264.29,
+                                             "y_min":  4222.63,
+                                             "x_max":  12567.68,
+                                             "y_max":  4543.5
+                                         },
+                           "bbox_xywh":  {
+                                             "x_center":  12415.99,
+                                             "y_center":  4383.07,
+                                             "width":  303.39,
+                                             "height":  320.87
+                                         }
+                       }
+                   ]
+}

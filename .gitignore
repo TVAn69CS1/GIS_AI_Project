@@ -1,2 +1,3 @@
 ﻿*.tif
 data/raster/orthophoto_normalized.tif
+yolo/weights/
