@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GIS AI | WebGIS</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header><div><h1>GIS AI <small>WebGIS Platform</small></h1><p>UAV Orthophoto · Raster Classification · YOLO</p></div><div id="status">● Đang tải dữ liệu...</div></header>
+<main><aside>
+<section class="panel"><h2>Điều khiển lớp dữ liệu</h2>
+<label><span>▰ Bản đồ nền CARTO</span><input id="toggle-base" type="checkbox" checked></label>
+<label><span>▰ Orthophoto RGB</span><input id="toggle-ortho" type="checkbox" checked></label>
+<label><span>▰ Phân loại thực vật / đất</span><input id="toggle-class" type="checkbox"></label>
+<label><span>▰ Đối tượng YOLO</span><input id="toggle-yolo" type="checkbox" checked></label>
+<div class="opacity"><span>Độ trong suốt lớp phân loại</span><input id="opacity" type="range" min="10" max="100" value="65"><b id="opacity-value">65%</b></div>
+</section>
+<section class="stats">
+<div><small>ĐỐI TƯỢNG YOLO</small><strong id="count">—</strong></div>
+<div><small>CONFIDENCE TB</small><strong id="confidence">—</strong></div>
+<div><small>LỚP PHÂN LOẠI</small><strong>2</strong></div>
+<div><small>HỆ TỌA ĐỘ</small><strong>EPSG:4326</strong></div>
+</section>
+<section class="panel"><div class="heading"><h2>Danh sách đối tượng</h2><button id="clear">Bỏ chọn</button></div><div id="objects">Đang tải GeoJSON...</div></section>
+<section class="panel"><h2>Chú giải</h2>
+<p><i class="green"></i> Class 1 · Thực vật</p><p><i class="brown"></i> Class 2 · Đất / lớp còn lại</p><p><i class="orange"></i> Đối tượng YOLO</p>
+<small class="note">Tên class cần đối chiếu với mã nguồn phân loại của nhóm.</small></section>
+</aside><section class="map-wrap">
+<div class="map-head"><b>Bản đồ phân tích khu vực</b><div><button id="fit-area">Toàn khu vực</button><button id="fit-yolo">Đối tượng YOLO</button></div></div>
+<div id="map"></div><footer id="map-message">EPSG:4326 · WGS 84</footer>
+</section></main>
+<dialog id="details"><form method="dialog"><button class="close">×</button></form><h2 id="detail-title">Thông tin đối tượng</h2><dl id="detail-content"></dl></dialog>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/georaster/dist/georaster.browser.bundle.min.js"></script>
+<script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+<script src="main.js"></script></body></html>
